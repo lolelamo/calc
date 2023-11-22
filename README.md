@@ -19,7 +19,7 @@ print("  ") es la forma mas basica de hacer saltos de linea, seguramente hay mej
 
 2- agregas mas operaciones matematicas
 
-3- cammbiar de colorama A rich, no necesariamente quitar colorama
+3- cambiar de colorama A rich, no necesariamente quitar colorama
 
 4- hacer tablas, poner barras de carga
 
