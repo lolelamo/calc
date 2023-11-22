@@ -4,9 +4,6 @@ import time as sp
 
 # abriendo el archivo para guardar los calculos
 archivo = open("save.txt", "w")
-import numpy as np
-import colorama
-
 
 # creando los DefS
 def suma(a, b):
