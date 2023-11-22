@@ -23,6 +23,6 @@ print("  ") es la forma mas basica de hacer saltos de linea, seguramente hay mej
 
 4- hacer tablas, poner barras de carga
 
-5- y finalmente, hacer mas bonito las tablas, barras de carga y mas
+5- finalmente, hacer mas bonito las tablas, barras de carga y mas
 
 
