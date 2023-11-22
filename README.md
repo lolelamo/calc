@@ -1,8 +1,8 @@
 # calc
 ## my first "Functional" .ipynb calculator
-
+#
 --ES--
-# en que lo hice y porque lo hice:
+en que lo hice y porque lo hice:
 Un proyecto, hecho en jupyter en el IDE VSCode, este proyecto fue para una tarea de la escuela
 Se tenia que pedir a la IA un codigo con 8 defs, no se especifica que tipos de operaciones matematicas
 
