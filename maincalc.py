@@ -25,7 +25,7 @@ def coseno(a):
     return np.cos(a)
 def tangente(a):
     return np.tan(a)
-print(colorama.Fore.RED + "Defs Creados" + colorama.Fore.RESET)
+print(colorama.Fore.GREEN + "Funciona" + colorama.Fore.RESET)
 print("   ")
 print("   ")
 
