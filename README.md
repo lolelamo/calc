@@ -1,4 +1,5 @@
 ## mi primer proyecto en jupyter
+## No es un proyecto totalmente serio, es mas para aprender
 
 #### --ES--
 en que lo hice y porque lo hice:
@@ -12,5 +13,12 @@ con archivo = open("save.txt" + "w"), utilize una cadena de Elifs para las opcio
 "print(colorama.Fore.RED + "funciona" + colorama.Fore.RESET)" es simplemente para saber si todo funciona bien, por si se quedo pegado o otra cosa
 print("  ") es la forma mas basica de hacer saltos de linea, seguramente hay mejores formas de saltar lineas pero lo dejare asi por ahora
 
+
+### Cosas que quiero hacer:
+1- arreglar errores y mejorar el codigo
+2- agregas mas operaciones matematicas
+3- cammbiar de colorama A rich, no necesariamente quitar colorama
+4- hacer tablas, poner barras de carga
+5- y finalmente, hacer mas bonito las tablas, barras de carga y mas
 
 
