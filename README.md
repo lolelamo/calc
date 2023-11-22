@@ -16,9 +16,13 @@ print("  ") es la forma mas basica de hacer saltos de linea, seguramente hay mej
 
 ### Cosas que quiero hacer:
 1- arreglar errores y mejorar el codigo
+
 2- agregas mas operaciones matematicas
+
 3- cammbiar de colorama A rich, no necesariamente quitar colorama
+
 4- hacer tablas, poner barras de carga
+
 5- y finalmente, hacer mas bonito las tablas, barras de carga y mas
 
 
