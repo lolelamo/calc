@@ -15,9 +15,9 @@ print("  ") es la forma mas basica de hacer saltos de linea, seguramente hay mej
 
 # Para usar la calculadora se necesita:
 
-numpy
+numpy (se utilizan raices cuadradas, sin(), cos(), tan(), arcsin(), arccos(). arctan() )
 python
-colorama
+colorama (colores y para que sea vea mas bonito)
 
 ### Cosas que quiero hacer:
 1- arreglar errores y mejorar el codigo
