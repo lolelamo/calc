@@ -15,7 +15,7 @@ print("  ") es la forma mas basica de hacer saltos de linea, seguramente hay mej
 
 # Para usar la calculadora se necesita:
 
-numpy \n
+numpy
 python
 colorama
 
