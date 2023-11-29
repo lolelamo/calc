@@ -1,5 +1,5 @@
  mi primer proyecto en jupyter
- No es un proyecto serio, es mas para aprender
+ No es un proyecto serio, es mas para aprender por mi cuenta
 
 #### --ES--
 en que lo hice y porque lo hice:
@@ -30,4 +30,11 @@ colorama (colores y para que sea vea mas bonito)
 
 5- finalmente, hacer mas bonito las tablas, y mas
 
+#Cambios
+
+t0.5: añadi sin, cos y tan y algunas mejoras para el codigo, como algunos "global" y configuracion (no esta completo y tiene errores
+ 
+t0.6: cambie por completo el print del inicio para hacerlo algo mas ordenado, añadi arcsin, arccos y arctan, cambie varias cosas
+quite por completo los "global", arregle algunos errores como el de si salias desde la terminal no se aplicaba el deinit() de colorama
+elimine el deinit() afuera del bucle (ya que nunca se ejecutaria), cambie algunas cosas de la config (sigue estando incompleta)
 
