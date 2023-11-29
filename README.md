@@ -11,8 +11,10 @@ este proyecto no es para nada serio y es mas para aprender
 
 Para ahorrar tiempo, utilice la base del código hecho por la IA 
 
-```python
-archivo = open("save.txt", "w")```
+```
+    python
+archivo = open("save.txt", "w")
+```
 
 
 También utilicé una cadena de `elif` para las opciones del 1 al 9, donde el 1 al 8 corresponden a las operaciones matemáticas y el 9 sirve para salir del código.
