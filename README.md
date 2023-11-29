@@ -13,7 +13,7 @@ Para ahorrar tiempo, utilice la base del código hecho por la IA
 
 ```
     python
-archivo = open("save.txt", "w")
+archivo = open("save.txt")
 ```
 
 
