@@ -13,7 +13,7 @@ con archivo = open("save.txt" + "w"), utilize una cadena de Elifs para las opcio
  "print(colorama.Fore.RED + "funciona" + colorama.Fore.RESET)" es simplemente para saber si todo funciona bien, por si se quedo pegado o otra cosa
 print("  ") es la forma mas basica de hacer saltos de linea, seguramente hay mejores formas de saltar lineas pero lo dejare asi por ahora
 
-Para usar la calculadora se necesita y el porque se utilizan:
+#Para usar la calculadora se necesita y el porque se utilizan:
 
 numpy (se utilizan raices cuadradas, ```sin()```, ```cos()```, ```tan()```, ```arcsin()```, ```arccos()```. ```arctan```() )  
 python  
