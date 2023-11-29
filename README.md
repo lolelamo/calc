@@ -1,40 +1,55 @@
- mi primer proyecto en vscode
- No es un proyecto serio, es mas para aprender por mi cuenta
+### Introducción
 
-#### --ES--
-en que lo hice y porque lo hice:
-Un proyecto, hecho en jupyter en el IDE VSCode, este proyecto fue para una tarea de la escuela
-Se tenia que pedir a la IA un codigo con 8 defs, no se especifica que tipos de operaciones matematicas
+Este proyecto fue creado en vscode esto era una tarea de la escuela, debiamos pedirle a una IA que nos genere un codigo con
+8 defs, sobre operaciones matematicas, sin especificar nada
 
- Explicacion basica del codigo (sin orden)
-para ahorrar tiempo utilize la base del codigo proporcionado por la ia y hice la calculadora, agregue una forma de guardar los calculos 
-con archivo = open("save.txt" + "w"), utilize una cadena de Elifs para las opciones del 1-9, 1-8 para las operaciones y el 9 para salir del codigo
+este proyecto no es para nada serio y es mas para aprender 
 
- "print(colorama.Fore.RED + "funciona" + colorama.Fore.RESET)" es simplemente para saber si todo funciona bien, por si se quedo pegado o otra cosa
-print("  ") es la forma mas basica de hacer saltos de linea, seguramente hay mejores formas de saltar lineas pero lo dejare asi por ahora
+* * *
 
-# Dependencias: #
-Numpy: se utiliza para las operaciones matemáticas, como la raíz cuadrada, las funciones trigonométricas, y las funciones inversas trigonométricas.
-Python: 
-Colorama: se utiliza para añadir colores al texto y hacer que el código sea más bonito.
+### Explicación del código
 
-### Cosas que quiero hacer:
-1- arreglar errores y mejorar el codigo
+Para ahorrar tiempo, utilice la base del código hecho por la IA 
 
-2- agregas mas operaciones matematicas
+```python
+archivo = open("save.txt", "w")```
 
-3- cambiar de colorama A rich, no necesariamente quitar colorama
 
-4- hacer tablas, poner barras de carga
+También utilicé una cadena de `elif` para las opciones del 1 al 9, donde el 1 al 8 corresponden a las operaciones matemáticas y el 9 sirve para salir del código.
+```
+python
+opcion = int(input("¿Qué operación quieres realizar? (1-8)"))
+if opcion == 1:
+    # codigo de Suma
+elif opcion == 2:
+    # codigo de Resta
+etc...
+```
 
-5- finalmente, hacer mas bonito las tablas, y mas
+* * *
 
-#Cambios
+### Dependencias
+* ```Numpy```:   
+* ```Python```:  
+* ```Colorama```:  
 
-t0.5: añadi sin, cos y tan y algunas mejoras para el codigo, como algunos "global" y configuracion (no esta completo y tiene errores
- 
-t0.6: cambie por completo el print del inicio para hacerlo algo mas ordenado, añadi arcsin, arccos y arctan, cambie varias cosas
-quite por completo los "global", arregle algunos errores como el de si salias desde la terminal no se aplicaba el deinit() de colorama
-elimine el deinit() afuera del bucle (ya que nunca se ejecutaria), cambie algunas cosas de la config (sigue estando incompleta)
-ahora finalmente funciona el ```archivo.write```
+* * *
+
+### Cosas que pienso añadir:
+
+En el futuro, me gustaría hacer lo siguiente:
+
+* Arreglar errores.
+* Añadir más operaciones matemáticas.
+* Cambiar de Colorama a Rich, no necesariamente quitar colorama.
+* Añadir tablas y barras de carga.
+* Hacer que el código sea más entedible, incluyendo tablas más bonitas y otras mejoras.
+
+* * *
+
+### Cambios realizados
+
+* En la versión 0.5 También hice algunas mejoras al código, como agregar variables ```global```
+* En la versión 0.6, cambié por completo el print del inicio para hacerlos mas bonito y ordenado. También añadí las funciones ```arcsin()```, ```arccos()```, y ```arctan()```. Además, quité las variables globales, elimine el ```deinit()``` fuera del bucle. Ahora el ```archivo.write()``` funciona correctamente.
+
 
