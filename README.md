@@ -37,4 +37,5 @@ t0.5: añadi sin, cos y tan y algunas mejoras para el codigo, como algunos "glob
 t0.6: cambie por completo el print del inicio para hacerlo algo mas ordenado, añadi arcsin, arccos y arctan, cambie varias cosas
 quite por completo los "global", arregle algunos errores como el de si salias desde la terminal no se aplicaba el deinit() de colorama
 elimine el deinit() afuera del bucle (ya que nunca se ejecutaria), cambie algunas cosas de la config (sigue estando incompleta)
+ahora finalmente funciona el ```archivo.write```
 
