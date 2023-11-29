@@ -1,4 +1,4 @@
- mi primer proyecto en jupyter
+ mi primer proyecto en vscode
  No es un proyecto serio, es mas para aprender por mi cuenta
 
 #### --ES--
