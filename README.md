@@ -58,8 +58,8 @@ En el futuro, me gustaría hacer lo siguiente:
 * Arreglar errores.
 * Añadir más operaciones matemáticas.
 * Cambiar de Colorama a Rich, no necesariamente quitar colorama.
-* Añadir tablas y barras de carga.
-* Hacer que el código sea más entedible, incluyendo tablas más bonitas y otras mejoras.
+* Añadir tablas, barras de carga y mas.
+* Hacer que el código sea más entedible
 
 * * *
 
