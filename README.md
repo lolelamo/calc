@@ -54,4 +54,14 @@ En el futuro, me gustaría hacer lo siguiente:
 * En la versión 0.5 También hice algunas mejoras al código, como agregar variables ```global```
 * En la versión 0.6, cambié por completo el print del inicio para hacerlos mas bonito y ordenado. También añadí las funciones ```arcsin()```, ```arccos()```, y ```arctan()```. Además, quité las variables globales, elimine el ```deinit()``` fuera del bucle. Ahora el ```archivo.write()``` funciona correctamente.
 
+* * *
+Errores que conozco:
 
+* Si poner un STRING en cualquier input va a dar error
+* algunas funciones de Trigonometria si les pones un numero que no corresponde te lanzara un error pero no una excepcion
+  por lo que sigue funcionando el codigo
+* todas las funciones de la config estan o rotas o no funcionan del todo bien
+* Los nombres de las variables son algo confusas
+  
+
+* * *
