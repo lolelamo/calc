@@ -57,7 +57,7 @@ En el futuro, me gustaría hacer lo siguiente:
 * * *
 Errores que conozco:
 
-* Si poner un STRING en cualquier input va a dar error
+* Si escribes un STRING en cualquier input va a dar error
 * algunas funciones de Trigonometria si les pones un numero que no corresponde te lanzara un error pero no una excepcion
   por lo que sigue funcionando el codigo
 * todas las funciones de la config estan o rotas o no funcionan del todo bien
