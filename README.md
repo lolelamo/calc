@@ -53,7 +53,7 @@ etc...
 
 ### Cosas que pienso añadir:
 
-En el futuro, me gustaría hacer lo siguiente:
+En el futuro, me gustaría hacer lo siguiente: (sin orden)
 
 * Arreglar errores.
 * Añadir más operaciones matemáticas.
