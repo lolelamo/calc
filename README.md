@@ -3,7 +3,7 @@
 Este proyecto fue creado en vscode esto era una tarea de la escuela, debiamos pedirle a una IA que nos genere un codigo con
 8 defs, sobre operaciones matematicas, sin especificar nada
 
-este proyecto no es para nada serio y es mas para aprender 
+este proyecto no es para nada serio,  es solo para aprender
 
 * * *
 
