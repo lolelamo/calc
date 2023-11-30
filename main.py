@@ -189,7 +189,7 @@ def menu():
             print("Config")
             print('''
             1. cambiar rad por deg (Desactivar / Activar, Funcion no testeada)
-            2. debug (Funcion sin uso por el momento, Desactivar / Activar)                                           , Desactivar / Activar)
+            2. debug (Funcion sin uso por el momento, Desactivar / Activar)
             3. deinit() (Desactivar / Activar)
             4. Redondear numero (Desactivar / Activar)''')
 
