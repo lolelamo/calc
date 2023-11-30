@@ -12,8 +12,22 @@ este proyecto no es para nada serio,  es solo para aprender
 Para ahorrar tiempo, utilice la base del código hecho por la IA 
 
 ```
-    python
-archivo = open("save.txt")
+def suma(a, b):
+    return a + b
+def resta(a, b):
+    return a - b
+def multiplicacion(a, b):
+    return a * b
+def division(a, b):
+    return a / b
+def raiz_cuadrada(a):
+    return np.sqrt(a)
+def seno(a):
+    return np.sin(a)
+def coseno(a):
+    return np.cos(a)
+def tangente(a):
+    return np.tan(a)
 ```
 
 
