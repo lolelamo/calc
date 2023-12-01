@@ -65,9 +65,9 @@ En el futuro, me gustaría hacer lo siguiente: (sin orden)
 
 ### Cambios realizados
 
-* En la versión 0.5 También hice algunas mejoras al código, como agregar variables ```global```
-* En la versión 0.6, cambié por completo el print del inicio para hacerlos mas bonito y ordenado. También añadí las funciones ```arcsin()```, ```arccos()```, y ```arctan()```. Además, quité las variables globales, elimine el ```deinit()``` fuera del bucle. Ahora el ```archivo.write()``` funciona correctamente.
-
+* 0.5: También hice algunas mejoras al código, como agregar variables ```global```
+* 0.6: cambié por completo el print del inicio para hacerlos mas bonito y ordenado. También añadí las funciones ```arcsin()```, ```arccos()```, y ```arctan()```. Además, quité las variables globales, elimine el ```deinit()``` fuera del bucle. Ahora el ```archivo.write()``` funciona correctamente.
+* 0.6.1: Quite el ```deinit()``` porque no lo habia eliminado, para ```sin() cos() tan()``` y sus ```arc``` en vez de "Trigonometria" le habia puesto "Logaritmos"
 * * *
 Errores que conozco:
 
