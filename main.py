@@ -63,7 +63,7 @@ def menu():
     print('''          {Operatoria basica y la Raiz cuadrada}: ''' + colorama.Fore.LIGHTGREEN_EX + '''
           [1- Suma] [2- Resta] [3- Multiplicacion] [4- Division] ''' + colorama.Fore.RESET + colorama.Fore.GREEN + '''
           [5- Raiz cuadrada] ''' +  colorama.Fore.RESET  + colorama.Fore.LIGHTCYAN_EX + ''' 
-          {Logaritmos}: ''' + colorama.Fore.RESET + colorama.Fore.CYAN + '''
+          {Trigonometria}: ''' + colorama.Fore.RESET + colorama.Fore.CYAN + '''
           [6- Seno] [7- Coseno] [8- Tangente]
           [9- Arco de (Seno numeros del -1 al 1)] [10- Arco de Coseno (numeros del -1 al 1)] [11- Arco de Tangente (solo numeros reales)]''' + colorama.Fore.RESET + '''
           [12- Salir del programa] [13- Configuracion]''' )
@@ -268,7 +268,4 @@ def menu():
 # ejecutando el menu en la terminal
 while True:
     menu()
-#no se que hace esto 2.0
 
-if dein == True:
-    colorama.deinit()
