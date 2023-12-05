@@ -3,7 +3,7 @@
 Este proyecto fue creado en vscode esto era una tarea de la escuela, debiamos pedirle a una IA que nos genere un codigo con
 8 defs, sobre operaciones matematicas, sin especificar nada
 
-este proyecto no es para nada serio,  es solo para aprender
+este proyecto no es para nada serio,  es solo para aprender y asi no me olvido xD
 
 * * *
 
@@ -31,15 +31,50 @@ def tangente(a):
 ```
 
 
-También utilicé una cadena de `elif` para las opciones del 1 al 9, donde el 1 al 8 corresponden a las operaciones matemáticas y el 9 sirve para salir del código.
-```
-python
-opcion = int(input("¿Qué operación quieres realizar? (1-8)"))
-if opcion == 1:
-    # codigo de Suma
-elif opcion == 2:
-    # codigo de Resta
-etc...
+También utilicé una cadena de `elif` para las opciones del 0 al 14, donde el 1 al 8 corresponden a las operaciones matemáticas y el 13
+sirve para salir del código.
+
+al principio pide un input y se valida, si es un str dara una excepcion
+cuando de esa excepcion el `except` se utilizara y se activara la variable `exc` y `opcion` se pondra como = 0
+como `exc` estara True dara un print diferente y asi seguira el bucle :D
+
+PYTHON:
+``` 
+    # pidiendo la opcion del usuario
+    opcion = input(colorama.Fore.YELLOW + "Opcion: " + colorama.Fore.RESET)
+    try:
+        opcion = int(opcion)
+    except ValueError:
+        print(colorama.Fore.LIGHTRED_EX + "Error" + colorama.Fore.RESET) 
+        opcion = 0
+        exc = True
+        
+    # validando la opcion del usuario
+    if opcion >= 0 and opcion <= 14:
+
+        # If para evitar errores
+        if opcion == 0: 
+            if exc == False:
+                print("No has escogido nada")
+            if exc == True:
+                print("" + "\n")
+            sp.sleep(3)
+        #elifs para comprobar la opcion del usuario
+
+        elif opcion == 1:
+            operando1 = input(colorama.Fore.GREEN + "Ingrese el primer numero: " + colorama.Fore.RESET)  
+            operando2 = input(colorama.Fore.GREEN + "Ingrese el segundo numero: " + colorama.Fore.RESET)
+            
+            print(" ")
+            try:
+                operando1 = float(operando1)
+                operando2 = float(operando2)
+                calculo = suma(operando1, operando2)
+                calc = True
+            except ValueError:
+                print("ERR:1: Ingresa un numero")
+ETC...
+
 ```
 
 * * *
@@ -53,17 +88,17 @@ etc...
 
 ### Cosas que pienso añadir:
 
-En el futuro, me gustaría hacer lo siguiente: (sin orden)
+En el futuro, me gustaría hacer lo siguiente: (en orden)   
 
 * Arreglar errores.
-* Añadir más operaciones matemáticas.
+* Añadir más operaciones matemáticas, faltan logaritmos, trigonometria y mas cosas.
 * Cambiar de Colorama a Rich, no necesariamente quitar colorama.
 * Añadir tablas, barras de carga y mas.
 * Hacer que el código sea más entedible
 
 * * *
 
-### Cambios realizados
+### Cambios realizados  
 
 * 0.5: También hice algunas mejoras al código, como agregar variables ```global```
 * 0.6: cambié por completo el print del inicio para hacerlos mas bonito y ordenado. También añadí las funciones ```arcsin()```, ```arccos()```, y ```arctan()```. Además, quité las variables globales, elimine el ```deinit()``` fuera del bucle. Ahora el ```archivo.write()``` funciona correctamente.
@@ -75,7 +110,7 @@ Errores que conozco:
 * algunas funciones de Trigonometria si les pones un numero que no corresponde te lanzara un error pero no una excepcion
   por lo que sigue funcionando el codigo
 * todas las funciones de la config estan o rotas o no funcionan del todo bien
-* Los nombres de las variables son algo confusas
+* Los nombres de las variables son algo confusas o no tienen funcion
   
 
 * * *
