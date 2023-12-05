@@ -1,23 +1,26 @@
 import numpy as np
 import colorama
 import time as sp
-#no se que hace esto
+
+
+
+
+#init() de colorama ya no funciona, en cambio se debe utilizar colorama.init()
 colorama.init()
 
-variablesinit = {
-    "var": False,
-    "rad": False,
-    "dein": False,
-    "redondear": False,
-    "debug": False,
-    "calc": False,
+#Se crean las variables
+var = False
+rad = False
+dein = False
+redondear = False
+debug = False
+calc = False
 
-}
 
 # abriendo el archivo para guardar los calculos
 archivo = open("save.txt")
 
-# creando los DefS
+# creando las definiiones para la mayoria de los calculos
 def suma(a, b):
     return a + b
 def resta(a, b):
@@ -41,65 +44,88 @@ def arccos(a):
 def arctan(a):
     return np.arctan(a)
 
+archivo_path = "save.txt"
+archivo = open(archivo_path, "a")
 
-
-
+# el def principal que estara en un bucle infinito hasta que el usuario cierre la ventana o use
+#el numero "13" 
 def menu():
     # abriendo el archivo para guardar los calculos
-    archivo = open("save.txt", "a")
-    var = variablesinit["var"]
-    debug = variablesinit["debug"]
-    calc = variablesinit["calc"]
-    dein = variablesinit["dein"]
-    redondear = variablesinit["redondear"]
-    rad = variablesinit["rad"]
+    global rad
+    global redondear
+    global debug
+    global var
+    global dein
+    calc = False
     calculo = 0.0
+    exc = False
+    trigonometria = False
 
     # imprimiendo el menu
     print(''' [STCalc]
           Code by lole, free to use :D, codigo hecho por un novato se espera errores en el codigo o algunas partes no se entiendan ''')
     print(" Lista de todas las operaciones matematicas disponibles:" + "\n")
     
-    print('''          {Operatoria basica y la Raiz cuadrada}: ''' + colorama.Fore.LIGHTGREEN_EX + '''
-          [1- Suma] [2- Resta] [3- Multiplicacion] [4- Division] ''' + colorama.Fore.RESET + colorama.Fore.GREEN + '''
-          [5- Raiz cuadrada] ''' +  colorama.Fore.RESET  + colorama.Fore.LIGHTCYAN_EX + ''' 
-          {Trigonometria}: ''' + colorama.Fore.RESET + colorama.Fore.CYAN + '''
-          [6- Seno] [7- Coseno] [8- Tangente]
-          [9- Arco de (Seno numeros del -1 al 1)] [10- Arco de Coseno (numeros del -1 al 1)] [11- Arco de Tangente (solo numeros reales)]''' + colorama.Fore.RESET + '''
-          [12- Salir del programa] [13- Configuracion]''' )
-
+    print("{Operaciones basicas}: ")
+    print("[1 +Suma] [2 Resta] [3 *Multiplicacion] [4 Division]")
+    print("{Logaritmos}:")
+    print("{Trigonometria}: ")
+    print("[6 Seno] [7 Coseno] [8 Tangente] ")
+    print("[9 Arco de Seno] [11 Arco de Coseno] [12 Arco de Tangente]")
+    print("{Otros}: ")
+    print("[13- Salir] [14- Opciones (No esta terminado)]")
 
 
     # pidiendo la opcion del usuario
     opcion = input(colorama.Fore.YELLOW + "Opcion: " + colorama.Fore.RESET)
-    opcion = int(opcion)
-
+    try:
+        opcion = int(opcion)
+    except ValueError:
+        print(colorama.Fore.LIGHTRED_EX + "Error" + colorama.Fore.RESET) 
+        opcion = 0
+        exc = True
+        
     # validando la opcion del usuario
-    if opcion >= 1 and opcion <= 13:
+    if opcion >= 0 and opcion <= 14:
 
-        # pidiendo los operandos (variables) para los numeros
+        # If para evitar errores
+        if opcion == 0: 
+            if exc == False:
+                print("No has escogido nada")
+            if exc == True:
+                print("" + "\n")
+            sp.sleep(3)
+        #elifs para comprobar la opcion del usuario
 
-        # los ifs y elifs para escoger el tipo de calculo
-        if opcion == 1:
-            calc = True
-            operando1 = input(colorama.Fore.GREEN + "Ingrese el primer numero: " + colorama.Fore.RESET)
-            operando1 = float(operando1)
+        elif opcion == 1:
+            operando1 = input(colorama.Fore.GREEN + "Ingrese el primer numero: " + colorama.Fore.RESET)  
             operando2 = input(colorama.Fore.GREEN + "Ingrese el segundo numero: " + colorama.Fore.RESET)
-            operando2 = float(operando2)
-
-            print("\n")
-
-            calculo = suma(operando1, operando2)
+            
+            print(" ")
+            try:
+                operando1 = float(operando1)
+                operando2 = float(operando2)
+                calculo = suma(operando1, operando2)
+                calc = True
+            except ValueError:
+                print("ERR:1: Ingresa un numero")
+                opcion = 1
 
         elif opcion == 2:
-            calc = True
+            
             operando1 = input(colorama.Fore.GREEN + "Ingrese el primer numero: " + colorama.Fore.RESET)
             operando1 = float(operando1)
             operando2 = input(colorama.Fore.GREEN + "Ingrese el segundo numero: " + colorama.Fore.RESET)
             operando2 = float(operando2)
-            print("\n")
-
-            calculo = resta(operando1, operando2)
+            print("\n") 
+            try:
+                operando1 = float(operando1)
+                operando2 = float(operando2)
+                calculo = resta(operando1, operando2)
+                calc = True
+            except ValueError:
+                print("ERR:1: Ingresa un numero")
+            
         elif opcion == 3:
             calc = True
             operando1 = input(colorama.Fore.GREEN + "Ingrese el primer numero: " + colorama.Fore.RESET)
@@ -107,6 +133,7 @@ def menu():
             operando2 = input(colorama.Fore.GREEN + "Ingrese el segundo numero: " + colorama.Fore.RESET)
             operando2 = float(operando2)
             print("\n")
+
             calculo = multiplicacion(operando1, operando2)
         elif opcion == 4:
             calc = True
@@ -146,52 +173,66 @@ def menu():
             print("\n")
 
             calculo = tangente(operando1)
-
         elif opcion == 9:
+            calc = True
+            trigonometria = True
+            operando1 = input(colorama.Fore.LIGHTGREEN_EX + "Ingresa Cos()")
+            operando1 = float(operando1)
+            print("\n")
+
+            operando1 = tangente(operando2)
+            operando1 = 1 / operando1
+
+            calculo = operando1 / operando2
+
+        elif opcion == 10:
+            
             operando1 = input("Arcsin (utiliza un numero como minimo -1 y como maximo 1) \n")
             operando1 = float(operando1)
-            try:
+            if operando1 <= 1 and operando1 >= -1:
                 calculo = arcsin(operando1)
                 calc = True
-            except ValueError or RuntimeWarning:
-                print(colorama.Fore.LIGHTRED_EX + "Error, numeros menores que -1 O mayores que 1 no se permiten para arcsin" + colorama.Fore.Reset)
+            else:
+                print(colorama.Fore.LIGHTRED_EX + "Err:2:, numeros menores que -1 O mayores que 1 no se permiten para arcsin" + colorama.Fore.Reset)
          
-        elif opcion == 10:
+        elif opcion == 11:
             operando1 = input("Ingresa un numero del, Arcos (utiliza un numero como minimo -1 y como maximo 1) \n")
             operando1 = float(operando1)
-            try:
+            if operando1 <= 1 and operando1 >= -1:
                 calculo = arccos(operando1)
                 calc = True
-            except ValueError or RuntimeWarning:
-                print(colorama.Fore.LIGHTRED_EX + "Error, numeros menores que -1 O mayores que 1 no se permiten para arccos" + colorama.Fore.Reset)
+            else:
+                print(colorama.Fore.LIGHTRED_EX + "Error, numeros menores que -1 O mayores que 1 no se pueden usar" + colorama.Fore.RESET)
 
-        elif opcion == 11:
-            operando1 = input(" Arctan (utiliza un numero Real) \n")
+
+        elif opcion == 12:
+            operando1 = input("Ingresa un numero") 
             operando1 = float(operando1)
 
             try:
                 calculo = arctan(operando1)
                 calc = True
             except ValueError or RuntimeWarning:
-                print(colorama.Fore.LIGHTRED_EX + "Error, SOLO numeros Reales" + colorama.Fore.Reset)
+                print(colorama.Fore.LIGHTRED_EX + "Error, SOLO numeros Reales" + colorama.Fore.RESET)
 
         #el codigo espera 2 segundos y termina (si el usuario pone el 9 para seleccionar)
-        elif opcion == 12:
+        elif opcion == 13:
             if dein == True:
                 colorama.deinit()
             sp.sleep(2)
             exit()
 
-
-        elif opcion == 13:
+        elif opcion == 14:
             print(" ")
             print(" ")
             print("Config")
             print('''
-            1. cambiar rad por deg (Desactivar / Activar, Funcion no testeada)
-            2. debug (Funcion sin uso por el momento, Desactivar / Activar)
-            3. deinit() (Desactivar / Activar)
-            4. Redondear numero (Desactivar / Activar)''')
+            1. cambiar de angulo a radianes (Funvion sin uso por el momento, Desactivar / Activar, False por defecto) 
+            2. debug (Funcion sin uso por el momento, Desactivar / Activar,  False por defecto)
+            3. deinit() (Desactivar / Activar,  True por defecto)
+            4. Redondear numero (Desactivar / Activar, False por Defecto)
+            5. Reestablecer config
+            6. Borrar save.txt''')
 
             opcion1 = input("ingresa un numero (1-4)")
             opcion1 = int(opcion1)
@@ -246,18 +287,17 @@ def menu():
                     sp.sleep(1)
                     print(" ")
         if calc == True:
-            if rad == True:
-                calculo = np.radian(calculo)
-            if debug == True:
-                print("rad?/round? = " + rad + "/" + redondear)
+            if trigonometria == True:
+                calculo = np.radians(calculo)
             if redondear == True:
                 calculo = np.round(calculo)
-
-        print(colorama.Fore.GREEN + "El resultado es: " + str(calculo) + colorama.Fore.RESET)
-        sp.sleep(5)
-        print("  ")
-        print("  ")
-        archivo.write("Resultado = " + str(calculo) + " [esta como puesto como radiales?] = " + str(rad) +" [el numero se redondeo?] = " + str(redondear) + "\n" + "\a")
+        if calc == True:
+            print(colorama.Fore.GREEN + "El resultado es: " + str(calculo) + colorama.Fore.RESET)
+            sp.sleep(5)
+            print("  ")
+            print("  ")
+            archivo = open(archivo_path, "a")
+            archivo.write("Resultado = " + str(calculo) + "[el numero se redondeo?] = " + str(redondear) + "\n")
     else:
         print(colorama.Fore.RED + "Opcion invalida" + colorama.Fore.RESET)
         sp.sleep(1)
@@ -268,4 +308,3 @@ def menu():
 # ejecutando el menu en la terminal
 while True:
     menu()
-
