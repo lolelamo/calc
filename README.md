@@ -103,14 +103,16 @@ En el futuro, me gustaría hacer lo siguiente: (en orden)
 * 0.5: También hice algunas mejoras al código, como agregar variables ```global```
 * 0.6: cambié por completo el print del inicio para hacerlos mas bonito y ordenado. También añadí las funciones ```arcsin()```, ```arccos()```, y ```arctan()```. Además, quité las variables globales, elimine el ```deinit()``` fuera del bucle. Ahora el ```archivo.write()``` funciona correctamente.
 * 0.6.1: Quite el ```deinit()``` porque no lo habia eliminado, para ```sin() cos() tan()``` y sus ```arc``` en vez de "Trigonometria" le habia puesto "Logaritmos"
+* 0.7: Arregle por completo la configuracion, elimine las variables `var` `debug` y añadi `div_to_cos` `ang_to_cos` si div_to_cos es False para sacar el Cotangente se usara 1/tan y si es True cos/sin
+  ahora todos los inputs arrojaran un texto de error si se pone un texto o un numero fuera del rango de los inputs para seleccionar una funcion, Añadi una funcion para Reestablecer las variables y otra para       eliminar el save.txt, estas dos funciones estan en la configuracion
 * * *
 Errores que conozco:
 
-* Si escribes un STRING en cualquier input va a dar error
-* algunas funciones de Trigonometria si les pones un numero que no corresponde te lanzara un error pero no una excepcion
-  por lo que sigue funcionando el codigo
-* todas las funciones de la config estan o rotas o no funcionan del todo bien
-* Los nombres de las variables son algo confusas o no tienen funcion
+* ~~Si escribes un STRING en cualquier input va a dar error~~  
+* algunas funciones de Trigonometria si les pones un numero que no corresponde te lanzara un error pero no una excepcion  
+  por lo que sigue funcionando el codigo  
+* ~~todas las funciones de la config estan o rotas o no funcionan del todo bien~~  
+* Los nombres de las variables son algo confusas ~~o no tienen funcion~~  
   
 
 * * *
