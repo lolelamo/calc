@@ -111,8 +111,8 @@ ahora todos los inputs arrojaran un texto de error si se pone un texto o un nume
 Errores que conozco:
 
 * ~~Si escribes un STRING en cualquier input va a dar error~~  
-* algunas funciones de Trigonometria si les pones un numero que no corresponde te lanzara un error pero no una excepcion  
-  por lo que sigue funcionando el codigo  
+* ~~algunas funciones de Trigonometria si les pones un numero que no corresponde te lanzara un error pero no una excepcion  
+  por lo que sigue funcionando el codigo~~  
 * ~~todas las funciones de la config estan o rotas o no funcionan del todo bien~~  
 * Los nombres de las variables son algo confusas ~~o no tienen funcion~~  
   
