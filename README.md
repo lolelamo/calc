@@ -105,7 +105,8 @@ En el futuro, me gustaría hacer lo siguiente: (en orden)
 * 0.6: cambié por completo el print del inicio para hacerlos mas bonito y ordenado. También añadí las funciones ```arcsin()```, ```arccos()```, y ```arctan()```. Además, quité las variables globales, elimine el ```deinit()``` fuera del bucle. Ahora el ```archivo.write()``` funciona correctamente.
 * 0.6.1: Quite el ```deinit()``` porque no lo habia eliminado, para ```sin() cos() tan()``` y sus ```arc``` en vez de "Trigonometria" le habia puesto "Logaritmos"
 * 0.7: Arregle por completo la configuracion, elimine las variables `var` `debug` y añadi `div_to_cos` `ang_to_cos` si div_to_cos es False para sacar el Cotangente se usara 1/tan y si es True cos/sin
-  ahora todos los inputs arrojaran un texto de error si se pone un texto o un numero fuera del rango de los inputs para seleccionar una funcion, Añadi una funcion para Reestablecer las variables y otra para       eliminar el save.txt, estas dos funciones estan en la configuracion
+ahora todos los inputs arrojaran un texto de error si se pone un texto o un numero fuera del rango de los inputs para seleccionar una funcion, Añadi una funcion para Reestablecer las variables y otra para eliminar el save.txt, estas dos funciones estan en la configuracion
+* 0.7.1: Arregle los errores de la configuracion ahora deberia funcionar normal, pequeñas correciones en el codigo y agregue logaritmos
 * * *
 Errores que conozco:
 
