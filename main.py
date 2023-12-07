@@ -76,7 +76,9 @@ def menu():
     print(colorama.Fore.LIGHTGREEN_EX)
     print("{Operaciones basicas}: ")
     print("[1. Suma] [2. Resta] [3. Multiplicacion] [4. Division]")
-
+    
+    print("{Raiz cuadrada}: [5. Raiz cuadrada]")
+    
     print("{Logaritmos}:")
     print("[6. Logaritmo en base 2] [7. Logaritmo en base 10] [8. Logaritmo natural]")
     print("[9. Logaritmo en cualquier base]")
