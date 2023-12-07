@@ -81,9 +81,9 @@ ETC...
 * * *
 
 ### Dependencias
-* ```Numpy```:   
-* ```Python```:  
-* ```Colorama```:  
+* ```Numpy```   
+* ```Python```  
+* ```Colorama```  
 
 * * *
 
