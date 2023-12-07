@@ -7,7 +7,7 @@ este proyecto no es para nada serio,  es solo para aprender y asi no me olvido x
 
 * * *
 
-### Explicación del código
+### Codigo por la IA
 
 Para ahorrar tiempo, utilice la base del código hecho por la IA 
 estos 8 defs son de la IA (Bard):
@@ -30,7 +30,7 @@ def tangente(a):
     return np.tan(a)
 ```
     
-     
+### Explicaion del codigo     
 utilicé una cadena de `elif` para las opciones del 0 al 14, donde el 1 al 12 corresponden a las operaciones matemáticas y el 13
 sirve para salir del código.
 
