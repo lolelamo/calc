@@ -9,9 +9,10 @@ este proyecto no es para nada serio,  es solo para aprender y asi no me olvido x
 
 ### Codigo por la IA
 
-Para ahorrar tiempo, utilice la base del código hecho por la IA 
+Para ahorrar tiempo, utilice la base del código hecho por la IA
 estos 8 defs son de la IA (Bard):
-```
+
+``` python
 def suma(a, b):
     return a + b
 def resta(a, b):
@@ -29,7 +30,7 @@ def coseno(a):
 def tangente(a):
     return np.tan(a)
 ```
-    
+
 ### Explicacion del codigo
 
 utilicé una cadena de `elif` para las opciones del 0 al 14, donde el 1 al 12 corresponden a las operaciones matemáticas y el 13
@@ -40,7 +41,8 @@ cuando de esa excepcion el `except` se utilizara y se activara la variable `exc`
 como `exc` estara True dara un print diferente y asi seguira el bucle :D
 
 PYTHON:
-``` 
+
+```
     # pidiendo la opcion del usuario
     opcion = input(colorama.Fore.YELLOW + "Opcion: " + colorama.Fore.RESET)
     try:
@@ -81,15 +83,16 @@ ETC...
 * * *
 
 ### Dependencias
-* ```Numpy```   
+
+* ```Numpy```
 * ```Python```  
 * ```Colorama```  
 
 * * *
 
-### Cosas que pienso añadir:
+### Cosas que pienso añadir
 
-En el futuro, me gustaría hacer lo siguiente: (en orden)   
+En el futuro, me gustaría hacer lo siguiente: (en orden)
 
 * Arreglar errores.
 * Añadir más operaciones matemáticas, faltan logaritmos, trigonometria y mas cosas.
@@ -101,28 +104,19 @@ En el futuro, me gustaría hacer lo siguiente: (en orden)
 
 ### Cambios realizados  
 
-* 0.5: hice algunas mejoras al código, como agregar variables ```global```
-  
+* 0.5: También hice algunas mejoras al código, como agregar variables ```global```
 * 0.6: cambié por completo el print del inicio para hacerlos mas bonito y ordenado. También añadí las funciones ```arcsin()```, ```arccos()```, y ```arctan()```. Además, quité las variables globales, elimine el ```deinit()``` fuera del bucle. Ahora el ```archivo.write()``` funciona correctamente.
-  
 * 0.6.1: Quite el ```deinit()``` porque no lo habia eliminado, para ```sin() cos() tan()``` y sus ```arc``` en vez de "Trigonometria" le habia puesto "Logaritmos"
-  
-* 0.7: Arregle por completo la configuracion, elimine las variables `var` `debug` y añadi `div_to_cos` `ang_to_cos` si div_to_cos es False, para sacar el Cotangente se usara 1/tan y si es True cos/sin
-ahora todos los inputs arrojaran un texto de error si se pone un texto o un numero fuera del rango de los inputs para seleccionar una funcion, Añadi una funcion para Reestablecer las variables y otra para eliminar el save.txt, estas dos funciones estan en la configuracion
+* 0.7: Arregle por completo la configuracion, elimine las variables `var` `debug` y añadi `div_to_cos` `ang_to_cos` si div_to_cos es False para sacar el Cotangente se usara 1/tan y si es True cos/sin
+ahora todos los inputs arrojaran un texto de error si se pone un texto o un numero fuera del rango de los inputs para seleccionar una funcion, Añadi una funcion para Reestablecer las variables y otra para       eliminar el save.txt, estas dos funciones estan en la configuracion
 
-* 0.7.1: Arregle los errores de la configuracion ahora deberia funcionar, pequeñas correciones en el codigo y agregue logaritmos
-  
 * * *
 Errores que conozco:
 
-* ~~Si escribes un STRING en cualquier input va a dar error~~
-  
-* ~~algunas funciones de Trigonometria si les pones un numero que no corresponde te lanzara un error pero no una excepcion  
-  por lo que sigue funcionando el codigo~~
-  
-* ~~todas las funciones de la config estan o rotas o no funcionan del todo bien~~
-   
+* ~~Si escribes un STRING en cualquier input va a dar error~~  
+* algunas funciones de Trigonometria si les pones un numero que no corresponde te lanzara un error pero no una excepcion  
+  por lo que sigue funcionando el codigo  
+* ~~todas las funciones de la config estan o rotas o no funcionan del todo bien~~  
 * Los nombres de las variables son algo confusas ~~o no tienen funcion~~  
   
-
 * * *
