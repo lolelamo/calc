@@ -95,7 +95,8 @@ ETC...
 En el futuro, me gustaría hacer lo siguiente: (en orden)
 
 * Arreglar errores.
-* Añadir más operaciones matemáticas, faltan logaritmos, trigonometria y mas cosas.
+* Añadir más operaciones matemáticas, faltan ~~Logaritmos~~, ~~Trigonometria~~
+  operaciones aritméticas, matrices y mas
 * Cambiar de Colorama a Rich, no necesariamente quitar colorama.
 * Añadir tablas, barras de carga y mas.
 * Hacer que el código sea más entedible
