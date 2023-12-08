@@ -12,7 +12,7 @@ este proyecto no es para nada serio,  es solo para aprender y asi no me olvido x
 Para ahorrar tiempo, utilice la base del código hecho por la IA
 estos 8 defs son de la IA (Bard):
 
-``` python
+``python``
 def suma(a, b):
     return a + b
 def resta(a, b):
