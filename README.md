@@ -117,6 +117,6 @@ Errores que conozco:
 * algunas funciones de Trigonometria si les pones un numero que no corresponde te lanzara un error pero no una excepcion  
   por lo que sigue funcionando el codigo  
 * ~~todas las funciones de la config estan o rotas o no funcionan del todo bien~~  
-* Los nombres de las variables son algo confusas ~~o no tienen funcion~~  
+* ~~Los nombres de las variables son algo confusas o no tienen funcion~~  
   
 * * *
