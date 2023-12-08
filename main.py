@@ -13,7 +13,7 @@ redondear = False
 calc = False
 div_to_cos = False
 ang_to_rad = False
-
+dot_to_coma = False
 
 
 # creando las definiciones para la mayoria de los calculos
@@ -60,7 +60,7 @@ archivo = open(archivo_ruta, "a+")
 # el def principal que estara en un bucle infinito hasta que el usuario cierre la ventana o use
 #el numero "13" 
 def menu():
-    #Las variables se haen globales y creo variables que estaran 
+    #Las variables se hacen globales y creo variables que estaran 
     #Volviendo a su valor por cada bucle
 
     global redondear
@@ -76,7 +76,6 @@ def menu():
     print(colorama.Fore.LIGHTGREEN_EX)
     print("{Operaciones basicas}: ")
     print("[1. Suma] [2. Resta] [3. Multiplicacion] [4. Division]")
-    
     print("{Raiz cuadrada}: [5. Raiz cuadrada]")
     
     print("{Logaritmos}:")
@@ -89,7 +88,7 @@ def menu():
     print("[16. Arco de Seno] [17. Arco de Coseno] [18. Arco de Tangente]")
 
     print("{Otros}: ")
-    print("[19. Salir] [20. Opciones (No esta terminado)]")
+    print("[19. Salir] [20. Opciones]")
     print(colorama.Fore.RESET)
 
     # pidiendo la opcion del usuario
@@ -124,7 +123,7 @@ def menu():
                 calculo = suma(operando1, operando2)
                 calc = True
             except ValueError:
-                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.Reset)
+                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.RESET)
 
         elif opcion == 2:
             
@@ -139,7 +138,7 @@ def menu():
                 calculo = resta(operando1, operando2)
                 calc = True
             except ValueError:
-                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.Reset)
+                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.RESET)
             
         elif opcion == 3:
             operando1 = input(colorama.Fore.GREEN + "Ingrese el primer numero: " + colorama.Fore.RESET)
@@ -151,7 +150,7 @@ def menu():
                 calculo = multiplicacion(operando1, operando2)
                 calc = True
             except ValueError:
-                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.Reset)
+                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.RESET)
 
         elif opcion == 4:
             operando1 = input(colorama.Fore.GREEN + "Ingrese el primer numero: " + colorama.Fore.RESET)
@@ -163,7 +162,7 @@ def menu():
                 calculo = division(operando1, operando2)
                 calc = True
             except ValueError:
-                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.Reset)
+                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.RESET)
         elif opcion == 5:     
             operando1 = input(colorama.Fore.GREEN + "Ingrese el primer numero: " + colorama.Fore.RESET)
 
@@ -174,7 +173,7 @@ def menu():
                 calc = True 
                 print("\n")
             except:
-                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.Reset)
+                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.RESET)
         elif opcion == 6:
             operando1 = input("Ingrese un numero: ")
             try:
@@ -183,7 +182,7 @@ def menu():
                 calc = True
                 print("\n")
             except ValueError:
-                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.Reset)
+                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.RESET)
         elif opcion == 7:
             operando1 = input("Ingrese un numero: ")
             try:
@@ -192,7 +191,7 @@ def menu():
                 calc = True
                 print("\n")
             except ValueError:
-                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.Reset)
+                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.RESET)
 
         elif opcion == 8:
             operando1 = input("Ingrese un numero: ")
@@ -202,7 +201,7 @@ def menu():
                 calc = True
                 print("\n")
             except ValueError:
-                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.Reset)
+                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.RESET)
             
         elif opcion == 9:
             operando1 = input("Ingrese el Valor: ")
@@ -215,7 +214,7 @@ def menu():
                 print("\n")
                 calc = True
             except ValueError:
-                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.Reset)
+                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.RESET)
 
         elif opcion == 10:
             operando1 = input(colorama.Fore.GREEN + "Ingrese el primer numero: " + colorama.Fore.RESET)
@@ -226,7 +225,7 @@ def menu():
                 calc = True
                 print("\n")
             except:
-                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.Reset)
+                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.RESET)
         elif opcion == 11:
             operando1 = input(colorama.Fore.GREEN + "Ingrese el primer numero: " + colorama.Fore.RESET)
             print("\n")
@@ -236,7 +235,7 @@ def menu():
                 calc = True
                 
             except:
-                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.Reset)
+                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.RESET)
         elif opcion == 12:
             operando1 = input(colorama.Fore.GREEN + "Ingrese un numero: " + colorama.Fore.RESET)
             print("\n")
@@ -246,7 +245,7 @@ def menu():
                 calc = True
                 
             except:
-                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.Reset)
+                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.RESET)
         elif opcion == 13:
             operando1 = input(colorama.Fore.LIGHTGREEN_EX + "Ingresa Sin()")
             print("\n")
@@ -272,7 +271,7 @@ def menu():
                 operando1 = coseno(operando2)
                 calculo = 1 / operando1
             except:
-                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.Reset)
+                print(colorama.Fore.LIGHTRED_EX + "Err:1: Ingresa un numero" + colorama.Fore.RESET)
 
         elif opcion == 15:         
             print("\n")
@@ -299,7 +298,7 @@ def menu():
                         calculo = operando2 / operando1
                         calc = True
                     except ValueError:
-                        print(colorama.Fore.LIGHTRED_EX + "Err:1:, Ingresa un numero" + colorama.Fore.Reset)
+                        print(colorama.Fore.LIGHTRED_EX + "Err:1:, Ingresa un numero" + colorama.Fore.RESET)
 
 
             except:
@@ -315,7 +314,7 @@ def menu():
                     calc = True
                     
                 else:
-                    print(colorama.Fore.LIGHTRED_EX + "Err:2:, Solo numeros entre -1 y 1" + colorama.Fore.Reset)
+                    print(colorama.Fore.LIGHTRED_EX + "Err:2:, Solo numeros entre -1 y 1" + colorama.Fore.RESET)
 
             except ValueError:
                     print(colorama.Fore.LIGHTRED_EX + "ERR:1: Ingresa un numero" + colorama.Fore.RESET)
@@ -329,7 +328,7 @@ def menu():
                 else:
                     print(colorama.Fore.LIGHTRED_EX + "Err:2:, Solo numeros entre -1 y 1" + colorama.Fore.RESET)
             except ValueError:
-                print(colorama.Fore.LIGHTRED_EX + "Err:1:, Ingresa un numero" + colorama.Fore.Reset)
+                print(colorama.Fore.LIGHTRED_EX + "Err:1:, Ingresa un numero" + colorama.Fore.RESET)
 
         elif opcion == 18:
             operando1 = input("Ingresa un numero") 
@@ -356,8 +355,16 @@ def menu():
         if calc == True:
             if ang_to_rad == True:
                 calculo = np.radians(calculo)
-            elif redondear == True:
+            if redondear == True:
                 calculo = np.round(calculo)
+            if dot_to_coma == True:
+                calculo = str(calculo)
+                calculo.replace(",", ".")
+                try:
+                    calculo = int(calculo)
+                except:
+                    print("ERR:5:")
+
             
             print(colorama.Fore.GREEN + "El resultado es: " + str(calculo) + colorama.Fore.RESET)
             sp.sleep(5)
@@ -375,12 +382,14 @@ def Reestablecer():
     global calc
     global div_to_cos
     global ang_to_rad
-    
+    global dot_to_coma
+
     dein = True
     redondear = False
     calc = False
     div_to_cos = False
     ang_to_rad = False
+    dot_to_coma = False
 
 def config():
     global dein
@@ -466,6 +475,8 @@ def config():
             #else:
                 #print(colorama.Fore.LIGHTRED_EX + "ERR:4: Opcion invalida " + colorama.Fore.RESET)
                 #sp.sleep(2)
+
+
 
 # ejecutando el menu en la terminal
 while True:
