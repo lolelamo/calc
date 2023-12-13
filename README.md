@@ -3,7 +3,8 @@
 Este proyecto fue creado en vscode esto era una tarea de la escuela, debiamos pedirle a una IA que nos genere un codigo con
 8 defs, sobre operaciones matematicas, sin especificar nada
 
-este proyecto no es para nada serio,  es solo para aprender y asi no me olvido xD
+este proyecto no es para nada serio,  es solo para aprender y asi no me olvido xD   
+
 
 * * *
 
@@ -31,7 +32,8 @@ def tangente(a):
     return np.tan(a)
 ```
 
-### Explicacion del codigo
+### Explicacion del codigo   
+(falta mas documentacion)  
 
 utilicé una cadena de `elif` para las opciones del 0 al 14, donde el 1 al 12 corresponden a las operaciones matemáticas y el 13
 sirve para salir del código.
