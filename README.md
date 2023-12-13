@@ -1,4 +1,4 @@
-### Introducción
+ ### Introducción
 
 Este proyecto fue creado en vscode esto era una tarea de la escuela, debiamos pedirle a una IA que nos genere un codigo con
 8 defs, sobre operaciones matematicas, sin especificar nada
@@ -110,14 +110,15 @@ En el futuro, me gustaría hacer lo siguiente: (en orden)
 * 0.6.1: Quite el ```deinit()``` porque no lo habia eliminado, para ```sin() cos() tan()``` y sus ```arc``` en vez de "Trigonometria" le habia puesto "Logaritmos"
 * 0.7: Arregle por completo la configuracion, elimine las variables `var` `debug` y añadi `div_to_cos` `ang_to_cos` si div_to_cos es False para sacar el Cotangente se usara 1/tan y si es True cos/sin
 ahora todos los inputs arrojaran un texto de error si se pone un texto o un numero fuera del rango de los inputs para seleccionar una funcion, Añadi una funcion para Reestablecer las variables y otra para eliminar el save.txt, estas dos funciones estan en la configuracion
-* 0.7.1: Algunas funciones tenian `Reset` en vez de `RESET` 
+* 0.7.1: Algunas funciones tenian `Reset` en vez de `RESET`
+* 0.7.2: Arregle los errores de la configuracion y tambien hice algunos cambios menores al codigo
 
 * * *
 Errores que conozco:
 
 * ~~Si escribes un STRING en cualquier input va a dar error~~  
-* algunas funciones de Trigonometria si les pones un numero que no corresponde te lanzara un error pero no una excepcion  
-  por lo que sigue funcionando el codigo  
+* ~~si pones un numero menor a -1 o mayor a 1 te lanzara un error pero no una excepcion (para las funciones arcsin y arccos)  
+  por lo que sigue funcionando el codigo~~  
 * ~~todas las funciones de la config estan o rotas o no funcionan del todo bien~~  
 * ~~Los nombres de las variables son algo confusas o no tienen funcion~~  
   
