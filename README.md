@@ -33,7 +33,7 @@ def tangente(a):
 ```
 
 ### Explicacion del codigo   
-(falta mas documentacion)  
+(falta mas explicación)  
 
 utilicé una cadena de `elif` para las opciones del 0 al 14, donde el 1 al 12 corresponden a las operaciones matemáticas y el 13
 sirve para salir del código.
