@@ -3,14 +3,14 @@
 Este proyecto fue creado en vscode esto era una tarea de la escuela, debiamos pedirle a una IA que nos genere un codigo con
 8 defs, sobre operaciones matematicas, sin especificar nada
 
-este proyecto no es para nada serio,  es solo para aprender y asi no me olvido xD   
+este proyecto no es para nada serio,  es solo para aprender 
 
 
 * * *
 
 ### Codigo por la IA
 
-Para ahorrar tiempo, utilice la base del código hecho por la IA
+Para ahorrar tiempo, utilice la base del código hecho por la IA  
 estos 8 defs son de la IA (Bard):
 
 ```
