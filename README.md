@@ -33,6 +33,6 @@ Errores que conozco:
   por lo que sigue funcionando el codigo~~  
 * ~~todas las funciones de la config estan o rotas o no funcionan del todo bien~~  
 * ~~Los nombres de las variables son algo confusas o no tienen funcion~~  
-* si se cambia el tamaño de la terminal mientras se muestra una tabla, esta se deformara
+* si se cambia el tamaño de la terminal mientras se muestra una tabla, la tabla se deformara
 
 * * *
