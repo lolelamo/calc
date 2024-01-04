@@ -15,7 +15,7 @@ este codigo es una simple calculadora con trigonometria, logaritmos y aritmertic
 
 ### Cosas que pienso añadir
 
-En el futuro, me gustaría hacer lo siguiente: (en orden)
+En el futuro, me gustaría hacer lo siguiente: (sin orden)
 
 * Arreglar errores.
 * Añadir más operaciones matemáticas, faltan ~~Logaritmos~~, ~~Trigonometria~~
