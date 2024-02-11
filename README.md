@@ -1,7 +1,7 @@
  ### Introducción
 
 Este proyecto fue creado en vscode esto fue para una tarea de la escuela
-este proyecto no es para nada serio,  es solo para aprender 
+este proyecto no es para nada serio,  es solo para ir aprender 
 
 este codigo es una simple calculadora con trigonometria, logaritmos y aritmertica basica
 
