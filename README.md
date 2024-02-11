@@ -13,19 +13,6 @@ este codigo es una simple calculadora con trigonometria, logaritmos y aritmertic
 
 * * *
 
-### Cosas que pienso añadir
-
-En el futuro, me gustaría hacer lo siguiente: (sin orden)
-
-* Arreglar errores.
-* Añadir más operaciones matemáticas, faltan ~~Logaritmos~~, ~~Trigonometria~~
-  operaciones aritméticas, matrices y mas
-* ~~Cambiar de Colorama a Rich, no necesariamente quitar colorama.~~
-* ~~Añadir tablas.~~
-
-
-* * *
-
 Errores que conozco:
 
 * ~~Si escribes un STRING en cualquier input va a dar error~~  
